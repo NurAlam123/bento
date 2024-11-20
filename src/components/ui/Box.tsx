@@ -2,7 +2,7 @@
 
 import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
-import { BoxProps } from "../../@types/BoxProps";
+import { BoxProps } from "@/types/BoxProps";
 import clsx from "clsx";
 
 const Box = ({ className, boxVairant = "normal", ...rest }: BoxProps) => {

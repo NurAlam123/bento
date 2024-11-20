@@ -1,6 +1,5 @@
-import Welcome from "./Grids/Welcome";
+import { Hero, Socials, Welcome } from "./grids";
 import HeadingBox from "./HeadingBox";
-import Hero from "./Grids/Hero";
 
 const BentoGrid = () => {
   return (
@@ -10,6 +9,7 @@ const BentoGrid = () => {
       <div className="grid grid-cols-12 grid-flow-dense gap-4 w-full">
         <Hero />
         <Welcome />
+        <Socials />
       </div>
     </section>
   );

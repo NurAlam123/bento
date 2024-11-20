@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Box from "../Box";
+import { Box } from "../ui";
 
 const Hero = () => {
   return (

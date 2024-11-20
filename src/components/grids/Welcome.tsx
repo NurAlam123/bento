@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Box from "../Box";
-import Title from "../Title";
+import { Box, Title } from "../ui";
 
 const Welcome = () => {
   return (

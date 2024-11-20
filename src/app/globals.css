@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  background: #fbfbfb;
+}
+
 @layer utilities {
   .image {
     @apply rounded-xl border border-zinc-300 object-cover;
