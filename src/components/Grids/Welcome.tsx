@@ -1,10 +1,21 @@
+import Image from "next/image";
 import Box from "../Box";
-import Section from "../Section";
+import Title from "../Title";
 
 const Welcome = () => {
   return (
-    <Section title="&#x1F44B; Welcome">
-      <Box className="text-zinc-600">
+    <>
+      <Title text="&#x1F44B; Welcome" />
+      <Box boxVairant="image" className="md:col-span-6 mx-auto">
+        <Image
+          src="/hi.jpg"
+          alt="hi"
+          width={400}
+          height={400}
+          className="image"
+        />
+      </Box>
+      <Box className="text-zinc-600 md:col-span-6">
         <p className="text-xl">
           Hi, I am{" "}
           <span className="text-2xl text-black">
@@ -16,7 +27,7 @@ const Welcome = () => {
           And welcome to my own bento grid layout.
         </p>
       </Box>
-    </Section>
+    </>
   );
 };
 
