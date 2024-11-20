@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        rubik: "--font-rubik",
+      },
     },
   },
   plugins: [],
