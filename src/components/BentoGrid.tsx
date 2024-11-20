@@ -1,6 +1,5 @@
-import { Hero, Socials, Welcome } from "./grids";
+import { Hero, PortfolioLink, Socials, Welcome } from "./grids";
 import HeadingBox from "./HeadingBox";
-import { LinkBox } from "./ui";
 
 const BentoGrid = () => {
   return (
@@ -10,9 +9,7 @@ const BentoGrid = () => {
       <div className="grid grid-cols-12 grid-flow-dense gap-4 w-full">
         <Hero />
         <Welcome />
-        <LinkBox href="https://nuralam.vercel.app">
-          <p>Portfolio</p>
-        </LinkBox>
+        <PortfolioLink />
         <Socials />
       </div>
     </section>
