@@ -2,5 +2,5 @@ import { MotionProps } from "framer-motion";
 
 type BoxProps = {
   className?: string;
-  boxVairant?: "normal" | "image";
+  boxVairant?: "normal" | "image" | "section";
 } & MotionProps;

@@ -1,4 +1,4 @@
-import { Hero, PortfolioLink, Socials, Welcome } from "./grids";
+import { Hero, PortfolioLink, Projects, Socials, Welcome } from "./grids";
 import HeadingBox from "./HeadingBox";
 
 const BentoGrid = () => {
@@ -11,6 +11,7 @@ const BentoGrid = () => {
         <Welcome />
         <PortfolioLink />
         <Socials />
+        <Projects />
       </div>
     </section>
   );

@@ -13,6 +13,8 @@ const Box = ({ className, boxVairant = "normal", ...rest }: BoxProps) => {
           boxVairant === "normal" &&
             "col-span-12 p-6 border bg-zinc-50 border-zinc-200 rounded-xl",
           boxVairant === "image" && "col-span-12",
+          boxVairant === "section" &&
+            "col-span-12 p-4 gap-2 border bg-zinc-50 border-zinc-200 rounded-xl grid grid-cols-12",
         ),
         className,
       )}
