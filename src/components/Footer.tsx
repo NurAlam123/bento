@@ -1,14 +1,14 @@
 import { ArrowUpRight } from "@/assets/icons";
 
 const Footer = () => {
-  const createdDate = "2023";
+  const createdDate = "2024";
   const currentDate = new Date().getFullYear().toString();
   return (
     <footer className="flex flex-col gap-6 md:gap-0 md:flex-row justify-between text-zinc-700 md:items-center">
       <div>
         <h4 className="text-3xl text-zinc-800 font-medium mb-2">Lightento</h4>
         <p className="text-md">
-          Nur Alam &copy; {createdDate}
+          Nur Alam &copy; {createdDate}{" "}
           {currentDate !== createdDate && `- ${currentDate}`}
         </p>
       </div>

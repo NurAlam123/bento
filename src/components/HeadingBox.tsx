@@ -12,7 +12,7 @@ const HeadingBox = () => {
       />
       <h1 className="text-4xl font-bold">Nur Alam</h1>
       <p className="text-sm text-zinc-600">
-        - Front-End Developer <br /> - Likes Anime
+        - Front-End Developer <br />
       </p>
     </div>
   );
