@@ -2,6 +2,6 @@ import { MotionProps } from "framer-motion";
 
 type LinkBoxProps = {
   className?: string;
-  boxVairant?: "normal" | "image";
+  boxVariant?: "normal" | "image";
   href: string;
 } & MotionProps;

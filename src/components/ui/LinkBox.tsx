@@ -7,7 +7,7 @@ import clsx from "clsx";
 
 const LinkBox = ({
   className,
-  boxVairant = "normal",
+  boxVariant = "normal",
   href,
   ...rest
 }: LinkBoxProps) => {
@@ -18,9 +18,9 @@ const LinkBox = ({
       className={twMerge(
         "block cursor-pointer",
         clsx(
-          boxVairant === "normal" &&
+          boxVariant === "normal" &&
             "col-span-12 p-6 border bg-zinc-50 border-zinc-200 rounded-xl",
-          boxVairant === "image" && "col-span-12",
+          boxVariant === "image" && "col-span-12",
         ),
         className,
       )}

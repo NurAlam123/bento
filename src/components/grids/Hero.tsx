@@ -3,7 +3,7 @@ import { Box } from "../ui";
 
 const Hero = () => {
   return (
-    <Box boxVairant="image">
+    <Box boxVariant="image">
       <Image
         src="/i_just_got_an_idea.png"
         alt="Goat saying I just got a crazy idea - picture is form theycantalk.com"

@@ -1,6 +1,12 @@
-import { cerebromashLab, cogni, natala, ycDirectory } from "@/assets/projects";
+import {
+  cerebromashLab,
+  cogni,
+  natala,
+  sodiumUI,
+  ycDirectory,
+} from "@/assets/projects";
 
-export const projects = [
+export const projects: ProjectsType = [
   {
     title: "CerebroMesh Labs",
     description:
@@ -15,6 +21,22 @@ export const projects = [
     links: {
       github: "",
       live: "https://cerebromesh-labs-ten.vercel.app/",
+    },
+  },
+  {
+    title: "Sodium UI",
+    description:
+      "A random collection of UI found on the internet. I take inspiration and try it out myself by using Next.js, Tailwind CSS and Framer Motion.",
+    image: {
+      src: sodiumUI.src,
+      alt: "Sodium UI",
+      height: sodiumUI.height,
+      width: sodiumUI.width,
+    },
+    techs: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    links: {
+      live: "https://sodium-ui.vercel.app/",
+      github: "https://github.com/nuralam123/sodium-ui",
     },
   },
   {

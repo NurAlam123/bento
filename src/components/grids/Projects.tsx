@@ -9,8 +9,8 @@ const Projects = () => {
     <>
       <Title text="&#x1F42C; Projects" />
       {projects.map((project, index) => (
-        <Box boxVairant="section" key={index}>
-          <Box boxVairant="image">
+        <Box boxVariant="section" key={index}>
+          <Box boxVariant="image">
             <Image
               key={project.title}
               src={project.image.src}
@@ -20,13 +20,13 @@ const Projects = () => {
               className="image w-full object-cover"
             />
           </Box>
-          <Box className="md:col-span-10 p-0 border-none" boxVairant="section">
+          <Box className="md:col-span-10 p-0 border-none" boxVariant="section">
             <Box className="text-xl font-semibold flex items-center">
               {project.title}
             </Box>
             <Box className="text-md text-zinc-800">{project.description}</Box>
           </Box>
-          <Box className="md:col-span-2 p-0 border-none" boxVairant="section">
+          <Box className="md:col-span-2 p-0 border-none" boxVariant="section">
             {project.links.live && (
               <LinkBox
                 href={project.links.live}
