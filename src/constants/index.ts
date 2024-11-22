@@ -76,7 +76,7 @@ export const projects: ProjectsType = [
     description:
       "A modern Full Stack app for the new era for startups. Submit your ideas, vote on pitches and get noticed in virtual competition. Pitch, Vote, Grow",
     image: {
-      src: ycDirectory,
+      src: ycDirectory.src,
       height: ycDirectory.height,
       width: ycDirectory.width,
       alt: "YC Directory",
