@@ -88,3 +88,5 @@ export const projects: ProjectsType = [
     },
   },
 ];
+
+export const spotifyTrackID = "5QO79kh1waicV47BqGRL3g";

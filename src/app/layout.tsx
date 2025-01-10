@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubikFont.className} antialiased`}>{children}</body>
+      <body className={`${rubikFont.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }

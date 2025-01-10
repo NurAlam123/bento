@@ -1,7 +1,8 @@
+import { spotifyTrackID } from "@/constants";
 import Box from "./Box";
 
 const Spotify = () => {
-  const songURI = "https://open.spotify.com/embed/track/0SccFtYdj75y6lL2OW10Cf";
+  const songURI = `https://open.spotify.com/embed/track/${spotifyTrackID}`;
   return (
     <Box boxVariant="image">
       <iframe
