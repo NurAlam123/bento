@@ -3,13 +3,14 @@ import { Box, LinkBox, Title } from "../ui";
 import { projects } from "@/constants";
 import { LinkChain } from "@/assets/icons";
 import { Github } from "@/assets/svgs";
+import { SlideUp } from "../animaiton/layout-animation";
 
 const Projects = () => {
   return (
     <>
-      <Title text="&#x1F42C; Projects" />
+      <Title emoji="&#x1F42C;" text="Projects" />
       {projects.map((project, index) => (
-        <Box boxVariant="section" key={index}>
+        <SlideUp key={index} boxVariant="section">
           <Box boxVariant="image">
             <Image
               key={project.title}
@@ -45,7 +46,7 @@ const Projects = () => {
             )}
           </Box>
           <Box>{project.techs.join(", ")}</Box>
-        </Box>
+        </SlideUp>
       ))}
     </>
   );
