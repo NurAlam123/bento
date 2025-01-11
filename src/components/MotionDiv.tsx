@@ -2,7 +2,7 @@
 import { motion, MotionProps } from "framer-motion";
 
 type MotionDivProps = {
-  className: string;
+  className?: string;
 } & MotionProps;
 
 const MotionDiv = ({ className, ...props }: MotionDivProps) => {
