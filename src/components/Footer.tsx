@@ -1,4 +1,6 @@
 import { ArrowUpRight } from "@/assets/icons";
+import { pageGithub } from "@/constants";
+import { myPortfolioLink } from "@/constants/socials";
 
 const Footer = () => {
   const createdDate = "2024";
@@ -13,19 +15,19 @@ const Footer = () => {
         </p>
       </div>
       <div className="flex gap-6 *:underline *:underline-offset-2 *:flex *:relative">
-        <a href="https://github.com/nuralam123/bento" target="_blank">
+        <a href={pageGithub} target="_blank">
           Github
           <span className="absolute -top-2 -right-3">
             <ArrowUpRight className="w-4" />
           </span>
         </a>
-        <a href="https://nuralam.vercel.app" target="_blank">
+        <a href={myPortfolioLink} target="_blank">
           Portfolio{" "}
           <span className="absolute -top-2 -right-3">
             <ArrowUpRight className="w-4" />
           </span>
         </a>
-        <a href="https://nuralam.vercel.app/#contact" target="_blank">
+        <a href={`${myPortfolioLink}/#contact`} target="_blank">
           Contact
           <span className="absolute -top-2 -right-3">
             <ArrowUpRight className="w-4" />

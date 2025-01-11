@@ -1,10 +1,11 @@
 import { ArrowUpRight } from "@/assets/icons";
 import { LinkBox } from "../ui";
+import { myPortfolioLink } from "@/constants/socials";
 
 const PortfolioLink = () => {
   return (
     <LinkBox
-      href="https://nuralam.vercel.app"
+      href={myPortfolioLink}
       className="flex justify-center items-center bg-[#6090E8]"
     >
       <div className="text-4xl flex gap-4 items-center">
