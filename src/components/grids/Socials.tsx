@@ -4,7 +4,7 @@ import { LinkBox, Title } from "../ui";
 const Socials = () => {
   return (
     <>
-      <Title text="&#x1F4F1; Socials" />
+      <Title emoji="&#x1F4F1;" text="Socials" />
 
       {/* Email */}
       <LinkBox

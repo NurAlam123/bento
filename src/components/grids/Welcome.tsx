@@ -5,7 +5,7 @@ import Spotify from "../ui/Spotify";
 const Welcome = () => {
   return (
     <>
-      <Title text="&#x1F44B; Welcome" />
+      <Title emoji="&#x1F44B;" text="Welcome" />
       <Box boxVariant="image" className="md:col-span-6 mx-auto">
         <Image
           src="/hi.jpg"
