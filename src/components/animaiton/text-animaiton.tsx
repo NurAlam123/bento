@@ -3,14 +3,14 @@
 import { motion, MotionProps, Variants } from "framer-motion";
 
 // Props Types
-type TextSlideUpProps = {
+type TextSlideInProps = {
   children: React.ReactNode;
   delay?: number;
   spring?: boolean;
 } & MotionProps;
 
 // Variants
-const TextSlideUpVariants: Variants = {
+const TextSlideInVariants: Variants = {
   initial: {
     y: 50,
     opacity: 0,
@@ -21,7 +21,7 @@ const TextSlideUpVariants: Variants = {
   },
 };
 
-export const TextSlideUp: React.FC<TextSlideUpProps> = ({
+export const TextSlideIn: React.FC<TextSlideInProps> = ({
   children,
   delay = 0,
   spring,
@@ -51,7 +51,7 @@ export const TextSlideUp: React.FC<TextSlideUpProps> = ({
           <motion.span
             key={i}
             className="inline-block"
-            variants={TextSlideUpVariants}
+            variants={TextSlideInVariants}
           >
             {char}
             {char === " " && <>&nbsp;</>}

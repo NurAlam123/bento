@@ -1,7 +1,7 @@
+import { SlideUp, SlideUpBox } from "./animaiton/layout-animation";
 import Footer from "./Footer";
 import { Hero, PortfolioLink, Projects, Socials, Welcome } from "./grids";
 import HeadingBox from "./HeadingBox";
-import { Box } from "./ui";
 
 const BentoGrid = () => {
   return (
@@ -14,11 +14,13 @@ const BentoGrid = () => {
         <PortfolioLink />
         <Socials />
         <Projects />
-        <Box className="bg-zinc-100">
+        <SlideUpBox className="bg-zinc-100">
           <p className="text-center font-bold text-4xl">END</p>
-        </Box>
+        </SlideUpBox>
       </div>
-      <Footer />
+      <SlideUp>
+        <Footer />
+      </SlideUp>
     </section>
   );
 };

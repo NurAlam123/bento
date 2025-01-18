@@ -1,10 +1,10 @@
 import { spotifyTrackID } from "@/constants";
-import Box from "./Box";
+import { SlideUpBox } from "../animaiton/layout-animation";
 
 const Spotify = () => {
   const songURI = `https://open.spotify.com/embed/track/${spotifyTrackID}`;
   return (
-    <Box boxVariant="image">
+    <SlideUpBox boxVariant="image">
       <iframe
         className="border-none rounded-xl"
         src={`${songURI}?utm_source=generator&theme=0`}
@@ -14,7 +14,7 @@ const Spotify = () => {
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       />
-    </Box>
+    </SlideUpBox>
   );
 };
 

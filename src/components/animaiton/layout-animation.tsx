@@ -1,9 +1,10 @@
 "use client";
 
 import { BoxProps } from "@/types/BoxProps";
-import { useInView, Variants } from "framer-motion";
+import { MotionProps, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 import { Box } from "../ui";
+import MotionDiv from "../ui/MotionDiv";
 
 const SlideUpVariants: Variants = {
   initial: {
@@ -18,7 +19,7 @@ const SlideUpVariants: Variants = {
   },
 };
 
-export const SlideUp = ({ ...rest }: BoxProps) => {
+export const SlideUpBox = ({ ...rest }: BoxProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const halfInView = useInView(containerRef, { amount: 0.2, once: true });
 
@@ -26,10 +27,33 @@ export const SlideUp = ({ ...rest }: BoxProps) => {
     <Box
       initial="initial"
       animate={halfInView ? "show" : "initial"}
-      transition={{ duration: 0.5 }}
+      transition={{ ease: "easeOut", duration: 0.5, delay: 0.4 }}
       variants={SlideUpVariants}
       ref={containerRef}
       {...rest}
     />
+  );
+};
+
+type SlideUpProps = {
+  children: React.ReactNode;
+} & MotionProps;
+
+export const SlideUp = ({ children, ...rest }: SlideUpProps) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const halfInView = useInView(containerRef, { amount: 0.2, once: true });
+
+  return (
+    <MotionDiv
+      initial="initial"
+      animate={halfInView ? "show" : "initial"}
+      transition={{ ease: "easeOut", duration: 0.5, delay: 0.4 }}
+      variants={SlideUpVariants}
+      ref={containerRef}
+      className="overflow-hidden"
+      {...rest}
+    >
+      {children}
+    </MotionDiv>
   );
 };

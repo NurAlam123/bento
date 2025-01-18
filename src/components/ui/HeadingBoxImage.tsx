@@ -37,7 +37,7 @@ const HeadingBoxImage = () => {
       onHoverStart={() => setShow(true)}
       onHoverEnd={() => setShow(false)}
     >
-      <div className="border-2 border-zinc-300 rounded-full overflow-hidden size-[128px]">
+      <div className="border-2 border-zinc-300 hover:border-black transition duration-300 rounded-full overflow-hidden size-[128px]">
         <AnimatePresence mode="wait">
           {!show ? (
             <ImageBox key="avatar-1" src={images[0]} />
