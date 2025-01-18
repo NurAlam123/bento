@@ -19,7 +19,7 @@ const SlideUpVariants: Variants = {
   },
 };
 
-export const SlideUpBox = ({ ...rest }: BoxProps) => {
+export const SlideUpBox = ({ className, ...rest }: BoxProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const halfInView = useInView(containerRef, { amount: 0.2, once: true });
 
@@ -30,6 +30,7 @@ export const SlideUpBox = ({ ...rest }: BoxProps) => {
       transition={{ ease: "easeOut", duration: 0.5, delay: 0.4 }}
       variants={SlideUpVariants}
       ref={containerRef}
+      className={className}
       {...rest}
     />
   );
