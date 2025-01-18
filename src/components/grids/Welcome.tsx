@@ -9,7 +9,7 @@ const Welcome = () => {
       <Title emoji="&#x1F44B;" text="Welcome" />
       <SlideUpBox boxVariant="image" className="md:col-span-6 mx-auto">
         <Image
-          src="/hi.jpg"
+          src="/hi.webp"
           alt="hi"
           width={400}
           height={400}

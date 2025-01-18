@@ -68,7 +68,7 @@ const Hero = () => {
           {!flip ? (
             <ImageContainer
               key="part-1"
-              src="/i_just_got_an_idea.png"
+              src="/i_just_got_an_idea.webp"
               alt="Goat saying I just got a crazy idea - picture is form theycantalk.com"
               exit="exit"
               initial="initial"
@@ -78,7 +78,7 @@ const Hero = () => {
           ) : (
             <ImageContainer
               key="part-2"
-              src="/i_just_got_an_idea_2.png"
+              src="/i_just_got_an_idea_2.webp"
               exit="exit"
               initial="initial"
               animate="animate"

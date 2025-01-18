@@ -1,7 +1,7 @@
-import cogni from "./cogni.png";
-import cerebromashLab from "./cerebromesh_labs.png";
-import natala from "./natala.png";
-import ycDirectory from "./yc-directory.png";
-import sodiumUI from "./sodium_ui.png";
+import cogni from "./cogni.webp";
+import cerebromashLab from "./cerebromesh_labs.webp";
+import natala from "./natala.webp";
+import ycDirectory from "./yc-directory.webp";
+import sodiumUI from "./sodium_ui.webp";
 
 export { cogni, natala, cerebromashLab, ycDirectory, sodiumUI };

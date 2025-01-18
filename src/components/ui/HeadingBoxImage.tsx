@@ -28,7 +28,7 @@ const AvatarVariants: Variants = {
 };
 
 const HeadingBoxImage = () => {
-  const images = ["/avatar.jpg", "/avatar-2.jpg"];
+  const images = ["/avatar.webp", "/avatar-2.webp"];
   const [show, setShow] = useState<boolean>(false);
 
   return (
