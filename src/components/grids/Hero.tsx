@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import MotionDiv from "../ui/MotionDiv";
 import { MotionProps, Variants } from "framer-motion";
 
@@ -26,8 +25,6 @@ const firstOneVariant: Variants = {
 };
 
 const Hero = () => {
-  const [flip, setFlip] = useState(false);
-
   return (
     <a href="https://www.tumblr.com/theycantalk/762363162492289025/idea?source=share">
       <ImageContainer
